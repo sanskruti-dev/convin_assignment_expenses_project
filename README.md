@@ -15,10 +15,38 @@
 
 # Run and Test
 1) User Creation API
+<img width="1291" alt="image" src="https://github.com/user-attachments/assets/3fc54ea3-3e55-4da1-8514-eb8ee1bac8e7">
 2) Get JWT API
-3) User Fetch API
+`Case 1: If wrong email`
+<img width="1356" alt="image" src="https://github.com/user-attachments/assets/6c2dfa76-6a9f-48d6-ae35-b27a02042823">
+`Case 2: Valid user`
+ <img width="1306" alt="image" src="https://github.com/user-attachments/assets/023c0ba8-6f7d-45e0-9eb1-ea5f6a341bdd">
+
 4) All Users Fetch API
-5) Create Expense API
-6) Fetch All Expenses API
-7) Fetch Expense by User API
-8) Download Balance Sheet in CSV format API 
+<img width="1271" alt="image" src="https://github.com/user-attachments/assets/199aeba1-e531-4b5a-b31c-c2d8067c03bb">
+
+5) Get User By Id
+<img width="1359" alt="image" src="https://github.com/user-attachments/assets/cd06b5fc-cad9-4aba-8d0b-6a79658d72a7">
+
+6) Create Expense API
+`Case 1: Without JWT token`
+<img width="1357" alt="image" src="https://github.com/user-attachments/assets/dd76d93c-cfc7-43bf-a85d-b04b9850a7ed">
+
+`Case 2: With invalid/expired JWT token`
+<img width="1352" alt="image" src="https://github.com/user-attachments/assets/694cda98-762e-43c4-9354-5abda8fc3569">
+
+`Case 3: With Equal Share Method`
+<img width="1359" alt="image" src="https://github.com/user-attachments/assets/97a9955f-2e6a-40d2-bd37-ad334e6556ab">
+
+`Case 4: With Exact amount Share Method`
+<img width="1317" alt="image" src="https://github.com/user-attachments/assets/7e1e6e03-017e-4672-8afb-59844e3f7aea">
+
+`Case 5: With Percentage Share Meethod`
+<img width="1337" alt="image" src="https://github.com/user-attachments/assets/094756c6-3fa7-4583-b704-6aaefa9566bc">
+
+`Case 6: With percentage sum going beyond 100`
+<img width="1341" alt="image" src="https://github.com/user-attachments/assets/8f03746e-4891-4aac-a403-5779896578c8">
+
+8) Fetch All Expenses API
+9) Fetch Expense by User API
+10) Download Balance Sheet in CSV format API 
