@@ -16,6 +16,7 @@
 # Run and Test
 1) User Creation API
 <img width="1291" alt="image" src="https://github.com/user-attachments/assets/3fc54ea3-3e55-4da1-8514-eb8ee1bac8e7">
+
 2) Get JWT API
 `Case 1: If wrong email`
 <img width="1356" alt="image" src="https://github.com/user-attachments/assets/6c2dfa76-6a9f-48d6-ae35-b27a02042823">
