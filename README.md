@@ -48,5 +48,13 @@
 <img width="1341" alt="image" src="https://github.com/user-attachments/assets/8f03746e-4891-4aac-a403-5779896578c8">
 
 8) Fetch All Expenses API
+<img width="1347" alt="image" src="https://github.com/user-attachments/assets/c2cdf496-38dd-4dbd-90cd-0b719f679dd3">
+
 9) Fetch Expense by User API
-10) Download Balance Sheet in CSV format API 
+<img width="1307" alt="image" src="https://github.com/user-attachments/assets/363dc66d-9808-4c7a-b6eb-baffcde05c84">
+
+10) Download Balance Sheet in CSV format API
+<img width="1363" alt="image" src="https://github.com/user-attachments/assets/9a0b644d-9351-4b56-834b-e44a1385ffcd">
+<img width="650" alt="image" src="https://github.com/user-attachments/assets/846260a2-6539-4eca-b623-31f59c8f1bfe">
+
+
