@@ -35,7 +35,10 @@ class ExpenseSerializer(serializers.ModelSerializer):
             total_percentage = sum(participant.get('percentage_owed', 0) for participant in participants)
             if total_percentage != 100:
                 raise serializers.ValidationError("The total percentage owed must be 100%.")
-
+        elif data.get('split_method') == 'exact': 
+            total_owed = sum(participant.get('amount_owed', 0) for participant in participants)
+            if total_owed != data.get('amount'):
+                 raise serializers.ValidationError("The total owned amount should be equal to amount of expense")
         return data
 
     def create(self, validated_data):
@@ -48,12 +51,15 @@ class ExpenseSerializer(serializers.ModelSerializer):
             for participant_data in participants_data:
                 participant_data['amount_owed'] = amount_per_participant
                 ExpenseParticipant.objects.create(expense=expense, **participant_data)
+        elif validated_data['split_method'] == 'exact':
+            for participant_data in participants_data:
+                participant_data['amount_owed'] = participant_data.get('amount_owed')
+                ExpenseParticipant.objects.create(expense=expense, **participant_data)
         elif validated_data['split_method'] == 'percentage':
             for participant_data in participants_data:
                 if 'percentage_owed' in participant_data:
                     participant_data['amount_owed'] = (validated_data['amount'] * participant_data['percentage_owed']) / 100
                 ExpenseParticipant.objects.create(expense=expense, **participant_data)
-
         return expense
 
     def update(self, instance, validated_data):

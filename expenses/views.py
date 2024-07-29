@@ -12,7 +12,7 @@ from .serializers import UserSerializer, ExpenseSerializer
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 class CreateUserView(generics.CreateAPIView):
     queryset = User.objects.all()

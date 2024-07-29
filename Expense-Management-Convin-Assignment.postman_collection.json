@@ -1,0 +1,332 @@
+{
+	"info": {
+		"_postman_id": "0acea638-ebd4-4bb4-b12a-925e8b528459",
+		"name": "Expense-Management-Convin-Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6948769",
+		"_collection_link": "https://querybuilder.postman.co/workspace/Team-Workspace~70b3fbc1-281a-47e4-8c67-79b4fd7c1c77/collection/6948769-0acea638-ebd4-4bb4-b12a-925e8b528459?action=share&source=collection_link&creator=6948769"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Expense",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIyMTk1Mjc4LCJpYXQiOjE3MjIxOTQ5NzgsImp0aSI6IjVhNDdhYzQzOWQyYjRhMjc5MDhmMmQyODgyMjU1N2M3IiwidXNlcl9pZCI6Nn0.4117qHncIqwzanQyjkNMa9waNqx3YdWrO7nl7z-12G8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": 1,\n  \"description\": \"Dinner\",\n  \"amount\": 200.0,\n  \"date\": \"2024-07-28\",\n  \"split_method\": \"percentage\",\n  \"participants\": [\n    {\"user\": 1, \"percentage\": \"45\"},\n    {\"user\": 2, \"percentage\": \"55\"}\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/expenses/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"expenses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Expenses",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIyMTk1Mjc4LCJpYXQiOjE3MjIxOTQ5NzgsImp0aSI6IjVhNDdhYzQzOWQyYjRhMjc5MDhmMmQyODgyMjU1N2M3IiwidXNlcl9pZCI6Nn0.4117qHncIqwzanQyjkNMa9waNqx3YdWrO7nl7z-12G8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": 1,\n  \"description\": \"Dinner\",\n  \"amount\": 200.0,\n  \"date\": \"2024-07-28\",\n  \"split_method\": \"percentage\",\n  \"participants\": [\n    {\"user\": 1, \"percentage\": \"45\"},\n    {\"user\": 2, \"percentage\": \"55\"}\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/expenses/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"expenses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Expenses By User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIyMTk2MTMzLCJpYXQiOjE3MjIxOTU4MzMsImp0aSI6ImJhYmI3ZTVkMzU2MDQwNzlhMGQ1YWM0NjE2NGRjMDNlIiwidXNlcl9pZCI6Nn0.5ryfxGOQSTHu0qdKj4yqT-a7uhnyZ15zac-AJhxTJQE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": 1,\n  \"description\": \"Dinner\",\n  \"amount\": 200.0,\n  \"date\": \"2024-07-28\",\n  \"split_method\": \"percentage\",\n  \"participants\": [\n    {\"user\": 1, \"percentage\": \"45\"},\n    {\"user\": 2, \"percentage\": \"55\"}\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/expenses/user/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"expenses",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Expenses By Expense Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIyMTk2MTMzLCJpYXQiOjE3MjIxOTU4MzMsImp0aSI6ImJhYmI3ZTVkMzU2MDQwNzlhMGQ1YWM0NjE2NGRjMDNlIiwidXNlcl9pZCI6Nn0.5ryfxGOQSTHu0qdKj4yqT-a7uhnyZ15zac-AJhxTJQE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": 1,\n  \"description\": \"Dinner\",\n  \"amount\": 200.0,\n  \"date\": \"2024-07-28\",\n  \"split_method\": \"percentage\",\n  \"participants\": [\n    {\"user\": 1, \"percentage\": \"45\"},\n    {\"user\": 2, \"percentage\": \"55\"}\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/expenses/user/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"expenses",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Expenses By User Download",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIyMTk2MTMzLCJpYXQiOjE3MjIxOTU4MzMsImp0aSI6ImJhYmI3ZTVkMzU2MDQwNzlhMGQ1YWM0NjE2NGRjMDNlIiwidXNlcl9pZCI6Nn0.5ryfxGOQSTHu0qdKj4yqT-a7uhnyZ15zac-AJhxTJQE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": 1,\n  \"description\": \"Dinner\",\n  \"amount\": 200.0,\n  \"date\": \"2024-07-28\",\n  \"split_method\": \"percentage\",\n  \"participants\": [\n    {\"user\": 1, \"percentage\": \"45\"},\n    {\"user\": 2, \"percentage\": \"55\"}\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/expenses/user/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"expenses",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"random@example.com\",\n    \"password\": \"password123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
