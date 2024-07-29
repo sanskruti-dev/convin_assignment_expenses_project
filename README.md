@@ -5,7 +5,7 @@
 - Django 5.x
 - db sqlite
 - DRF ( Django Rest Framework )
-- JWT
+- JWT Authentication
 # Setup
 1) Git clone
 2) Goto the directory and create virtual environment `python3 -m venv venv` and activate `source venv/bin/activate`
