@@ -12,6 +12,7 @@
 3) Install Django `pip3 install django djangorestframework`
 4) Create Migrations `python3 manage.py makemigration` and Execute them `python3 manage.py migrate`
 5) Run Server `python3 manage.py runserver`
+6) Import this Postman Collection https://github.com/sanskruti-dev/convin_assignment_expenses_project/blob/main/Expense-Management-Convin-Assignment.postman_collection.json 
 
 # Run and Test
 1) User Creation API
